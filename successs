@@ -1,0 +1,11 @@
+while true do
+    local success, error = pcall(function()
+        if game:GetService("Players").LocalPlayer.PlayerGui.FirstPerson.Value == true then
+            game:GetService("Players").LocalPlayer.PlayerGui.FirstPerson.Value = false
+        end
+    end)
+    if not success then
+        warn("An error occurred while running the script: " .. error)
+    end
+    wait(0.1)
+end
